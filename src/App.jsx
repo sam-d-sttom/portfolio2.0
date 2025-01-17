@@ -22,8 +22,6 @@ function App() {
 
   // Main content displays after timeout delay
   useEffect(() => {
-    console.log(window.innerHeight)
-    console.log(window.innerWidth)
     const displayWelcomeTimeout = setTimeout(() => {
       setDisplayWelcome(false);
     }, 3000);

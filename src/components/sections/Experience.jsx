@@ -25,7 +25,7 @@ const Experience = () => {
                         section={"EXPERIENCE"}
                         viewportWidth={viewportWidth}
                         paragraphRef={experienceParagraphRef}
-                        columns='columns-1'
+                        columns='1'
                         paragraph={
                             <>
                                 <p className="ssm:text-sm md:text-base lg:text-2xl ssm:mb-2 md:mb-4 lg:mb-6">Jan 2023 - Present</p>

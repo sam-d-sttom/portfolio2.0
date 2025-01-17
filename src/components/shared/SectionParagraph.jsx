@@ -1,7 +1,7 @@
 import { motion, useInView } from "motion/react";
 import { useMemo } from "react";
 
-const SectionParagraph = ({ viewportWidth, paragraphRef, paragraph, columns = 'columns-2', section }) => {
+const SectionParagraph = ({ viewportWidth, paragraphRef, paragraph, columns = '2', section }) => {
 
     const paragraphInView = useInView(paragraphRef, {
         once: true,
@@ -31,7 +31,10 @@ const SectionParagraph = ({ viewportWidth, paragraphRef, paragraph, columns = 'c
     return (
         <div ref={paragraphRef}>
             <motion.div
-                className={`ssm:text-sm md:text-base fontRegular md:${columns} md:gap-6 lg:gap-20 md:px-10 lg:px-20`}
+                className={`ssm:text-sm md:text-base fontRegular md:gap-6 lg:gap-20 md:px-10 lg:px-20`}
+                style={{
+                    columnCount: columns
+                }}
                 initial={{
                     x: -100,
                     opacity: 0

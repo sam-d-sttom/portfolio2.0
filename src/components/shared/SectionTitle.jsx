@@ -57,8 +57,16 @@ const SectionTitle = ({ viewportWidth, headingRef, heading, flexPosition = 'star
     }
 
     return (
-        <div className={`flex w-full justify-${flexPosition} mb-10`}>
-            <div ref={headingRef} className={`ssm:w-[150px] lg:w-[300px] flex flex-col items-${flexPosition}`}>
+        <div className={`flex w-full mb-10`}
+            style={{
+                justifyContent: flexPosition
+            }}
+        >
+            <div ref={headingRef} className={`ssm:w-[150px] lg:w-[300px] flex flex-col items-${flexPosition}`}
+            style={{
+                alignItems: flexPosition
+            }}
+            >
                 <motion.h2 className=' fontBold text-secondary lg:text-xl'
                     variants={viewportWidth < 768 ? headingMobileVariant : headingDesktopVariant}
                     initial='initial'

@@ -40,22 +40,16 @@ const ProjectCardMobile = (props) => {
                         </p>
                         <a href={card.link} target="_blank" rel='noopener noreferrer' className="underline"> View Project</a>
 
-                        <ul className="flex justify-between md:px-0 text-xl md:text-2xl lg:text-3xl ssm:w-[70%] md:w-[90%]">
-                            <li >
-                                <FaReact className="" />
-                            </li>
-                            <li >
-                                <FaLaravel className="" />
-                            </li>
-                            <li >
-                                <TbBrandFramerMotion className="" />
-                            </li>
-                            <li >
-                                <RiTailwindCssFill className="" />
-                            </li>
-                            <li >
-                                <SiRedux className="" />
-                            </li>
+                        <ul className="flex ssm:gap-x-8 md:gap-x-6 lg:gap-x-10 md:px-0 text-xl md:text-2xl lg:text-3xl ">
+                            {
+                                card.tools.map((Icon, index)=>{
+                                    return (
+                                        <li key={index}>
+                                            <Icon />
+                                        </li>
+                                    )
+                                })
+                            }
                         </ul>
 
                     </div>
