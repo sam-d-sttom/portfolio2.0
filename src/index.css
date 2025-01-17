@@ -55,3 +55,9 @@ body {
 .glow-button:hover {
   box-shadow: 0 0 80px rgba(255, 0, 0, 0.8), 0 0 120px rgba(255, 0, 0, 0.6), 0 0 160px rgba(255, 0, 0, 0.4);
 }
+
+@media (max-width: 450px) {
+  .paragraph{
+    column-count: 1!important;
+  }
+}

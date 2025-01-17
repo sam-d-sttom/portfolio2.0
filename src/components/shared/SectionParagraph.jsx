@@ -31,7 +31,7 @@ const SectionParagraph = ({ viewportWidth, paragraphRef, paragraph, columns = '2
     return (
         <div ref={paragraphRef}>
             <motion.div
-                className={`ssm:text-sm md:text-base fontRegular md:gap-6 lg:gap-20 md:px-10 lg:px-20`}
+                className={`paragraph ssm:text-sm md:text-base fontRegular md:gap-6 lg:gap-20 md:px-10 lg:px-20`}
                 style={{
                     columnCount: columns
                 }}
